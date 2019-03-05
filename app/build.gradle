@@ -38,8 +38,8 @@ dependencies {
     //ViewModel and LiveData
     implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
     //Navigation
-    implementation 'android.arch.navigation:navigation-fragment-ktx:1.0.0-rc01'
-    implementation 'android.arch.navigation:navigation-ui-ktx:1.0.0-rc01'
+    implementation 'android.arch.navigation:navigation-fragment-ktx:1.0.0-rc02'
+    implementation 'android.arch.navigation:navigation-ui-ktx:1.0.0-rc02'
     //WorkManager
     implementation 'android.arch.work:work-runtime-ktx:1.0.0-rc02'
     //Room
@@ -50,7 +50,7 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.5'
     //Coroutines
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.0.1'
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.0.1'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.1.1'
     // Retrofit
     implementation 'com.squareup.retrofit2:retrofit:2.4.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.4.0'

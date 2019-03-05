@@ -1,25 +1,18 @@
 package com.ahasanidea.weatherforecast.ui.weather.current
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
+
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
-
 import com.ahasanidea.weatherforecast.R
-import com.ahasanidea.weatherforecast.data.network.ApixuWeatherApiService
-import com.ahasanidea.weatherforecast.data.network.ConnectivityInterceptorImpl
-import com.ahasanidea.weatherforecast.data.network.WeatherNetworkDataSourceImpl
 import com.ahasanidea.weatherforecast.internal.glide.GlideApp
 import com.ahasanidea.weatherforecast.ui.base.ScopedFragment
 import kotlinx.android.synthetic.main.current_weather_fragment.*
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
-import org.kodein.di.Kodein
 import org.kodein.di.KodeinAware
 import org.kodein.di.android.x.closestKodein
 import org.kodein.di.generic.instance
