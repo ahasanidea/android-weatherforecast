@@ -43,7 +43,8 @@ interface ApixuWeatherApiService {
 
             return Retrofit.Builder()
                 .client(okHttpClient)
-                .baseUrl("https://api.apixu.com/v1/").addCallAdapterFactory(CoroutineCallAdapterFactory())
+                .baseUrl("https://api.apixu.com/v1/")
+                .addCallAdapterFactory(CoroutineCallAdapterFactory())
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
                 .create(ApixuWeatherApiService::class.java)

@@ -6,7 +6,9 @@ import androidx.lifecycle.MutableLiveData
 import com.ahasanidea.weatherforecast.data.network.response.CurrentWeatherResponse
 import com.ahasanidea.weatherforecast.internal.NoConnectivityException
 
-class WeatherNetworkDataSourceImpl(private val apixuWeatherApiService: ApixuWeatherApiService) : WeatherNetworkDataSource {
+class WeatherNetworkDataSourceImpl(
+    private val apixuWeatherApiService: ApixuWeatherApiService
+) : WeatherNetworkDataSource {
     private val _downloadedCurrentWeather=MutableLiveData<CurrentWeatherResponse>()
     override val downloadedCurrentWeather: LiveData<CurrentWeatherResponse>
         get() = _downloadedCurrentWeather

@@ -14,12 +14,12 @@ import com.ahasanidea.weatherforecast.ui.base.ScopedFragment
 import kotlinx.android.synthetic.main.current_weather_fragment.*
 import kotlinx.coroutines.launch
 import org.kodein.di.KodeinAware
-import org.kodein.di.android.x.closestKodein
+import org.kodein.di.android.x.kodein
 import org.kodein.di.generic.instance
 
 class CurrentWeatherFragment : ScopedFragment(), KodeinAware {
 
-    override val kodein by closestKodein()
+    override val kodein by kodein()
 
     private val viewModelFactory: CurrentWeatherViewModelFactory by instance()
     private lateinit var viewModel: CurrentWeatherViewModel
